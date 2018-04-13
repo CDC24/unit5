@@ -6,4 +6,5 @@
 
 words = input("Enter some words please: ").split(" ")
 
-print(words)
+print("The first word was",words[o])
+print("The last word was",words[-1])
