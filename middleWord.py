@@ -5,6 +5,10 @@
 w = input("enter some words: ")
 
 
-words = [w.split(" ")]
+words = w.split(" ")
 
-print(words[5])
+if len(words)%2=0:
+    if len(words)/2]>words[(len(words)/2)-1]: # fix er up
+        print(words[len(words)/2])
+else:
+    print(words[len(words)/2])
