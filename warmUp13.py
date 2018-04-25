@@ -6,5 +6,9 @@ from random import randint
 
 nums = []
 
-for i in range (0,21):
-    nums.append(randint)
+for i in range (0,20):
+    nums.append(randint(1,10))
+
+print(sum(nums))
+print(min(nums))
+print(max(nums))
