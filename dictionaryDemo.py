@@ -9,5 +9,5 @@ words.sort()
 num = int(input("what number word do you want?  "))
 if num<=0 or num >=len(words)+1:
     print("you can't have that")
-
-print(words[num-1])
+else:
+    print(words[num-1])
