@@ -8,8 +8,6 @@ w = input("enter some words: ")
 words = w.split(" ")
 
 if len(words)%2==0:
-    if len(words)/2>(len(words)/2)-1:
-        print(words[(len(words)/2)-1])
-        
+    print(words[len(words)/2],words[(len(words)/2)-1])
 else:
-    print(words[len(words)/2])
+    print (words[len(words)/2])    
