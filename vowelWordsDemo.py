@@ -5,4 +5,5 @@
 words = (input("Words please: ")).split(" ")
 
 for word in words:
-    print (word)
+    if word[0] in "AEIOUaeiou":
+        print (word)
