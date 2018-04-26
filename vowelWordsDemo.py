@@ -3,3 +3,6 @@
 #vowelWordsDemo.py- using strings like lists- tells if str starts with a vowel
 
 words = (input("Words please: ")).split(" ")
+
+for word in words:
+    print (word)
