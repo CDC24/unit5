@@ -6,16 +6,12 @@
 from ggame import *
 from random import randint
 
+
+colors = [Color(0x00FF00,1),Color(0xFF0000,1),(0x0000FF,1),(0X00000000,1)]
+
 def randcol(event):
-    gnum = randint (1,4)
-    if gnum == 1:
-        col = Color(0x00FF00,1)
-    elif gnum == 2:
-        col = Color(0xFF0000,1)
-    elif gnum == 3:
-        col =  Color(0x0000FF,1)
-    elif gnum == 4:
-        col = Color(0X00000000,1)
+    gnum = randint (0,3)
+    col = colors[gnum]
     theRectangle = RectangleAsset(1500,1000,LineStyle(1,col),col)
     Sprite(theRectangle)
 
