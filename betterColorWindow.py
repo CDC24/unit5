@@ -7,7 +7,7 @@ from ggame import *
 from random import randint
 
 
-colors = [Color(0x00FF00,1),Color(0xFF0000,1),(0x0000FF,1),(0X00000000,1)]
+colors = [Color(0x00FF00,1),Color(0xFF0000,1),Color(0x0000FF,1),Color(0X00000000,1)]
 
 def randcol(event):
     gnum = randint (0,3)
