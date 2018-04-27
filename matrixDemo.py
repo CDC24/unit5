@@ -3,8 +3,8 @@
 #matrixDemo.py - Listception
 
 def printBoard(board):
-    for r in range(0,3):
-        print (board[r])
+    for row in range(0,3):
+        print (board[row])
 
 
 board = [["a","b","c"],["d","e","f"],["g","h","i"]]
