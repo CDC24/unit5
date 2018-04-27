@@ -11,6 +11,6 @@ select = randint(0,11)
 
 print (Months[select])
 if Months[select] == "January":
-    print "WOW!"
+    print ("WOW!")
 if Months[select] == "December":
-    print "GOOD JOB!"
+    print ("GOOD JOB!")
