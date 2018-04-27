@@ -15,3 +15,6 @@ printBoard(board)
 
 r = int(input("Enter a row: "))
 c = int(input("Enter a column: "))
+
+board[r-1][col-1] = "x"
+printBoard(board)
