@@ -10,7 +10,3 @@ Months = ["January","February","March","April","May","June","July","August","Sep
 select = randint(0,11)
 
 print (Months[select])
-if Months[select] == "January":
-    print ("WOW!")
-if Months[select] == "December":
-    print ("GOOD JOB!")
