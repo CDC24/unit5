@@ -27,6 +27,7 @@ if __name__ == "__main__":             #putting flakes on screen
     background = RectangleAsset(1000,500,LineStyle(1,black),black)
     flake = CircleAsset(5,LineStyle(1,white),white)
     
+    Sprite(background)
     for i in range (FLAKES):
         data["flakelist"].append(Sprite (flake,(randint(1,WIDTH),randint(1,HEIGHT))))
     
