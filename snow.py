@@ -11,12 +11,19 @@ WIDTH = 1000
 HEIGHT= 500
 
 
-def step():                             #move each flake randomly in x and y
+def step():                     #move each flake randomly in x and y
+    data["frames"] += 1
     for flake in data["flakelist"]:
         flake.x += randint (-3,2)
         flake.y += randint (0,3)
-        for i in range (FLAKES/15):
-            data["flakelist"].append(Sprite (flake,(randint(1,WIDTH),0)))
+        if data["frames"]%300 == 0:
+            for i in range (FLAKES/10):
+                data["flakelist"].append(Sprite (flake,(randint(1,WIDTH),0)))
+            
+        
+    
+        moveBanana()  
+         
 
 if __name__ == "__main__":             #putting flakes on screen
     
