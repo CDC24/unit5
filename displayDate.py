@@ -13,5 +13,5 @@ year = date.today().year
 
 weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
-print (weekdays[weekday(year,month,day)])
+print ("Today is",weekdays[weekday(year,month,day)], month)
 
