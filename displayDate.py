@@ -15,5 +15,5 @@ weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", 
 months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
 
 
-print ("Today is",weekdays[weekday(year,month,day)],",", months[month-1], day)
+print ("Today is",weekdays[weekday(year,month,day)],",", months[month-1], day,",", year)
 
