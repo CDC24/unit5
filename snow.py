@@ -16,9 +16,9 @@ def step():                     #move each flake randomly in x and y
     for flake in data["flakelist"]:
         flake.x += randint (-3,2)
         flake.y += randint (0,3)
-        if data["frames"]%300 == 0:
-            for i in range (FLAKES/10):
-                data["flakelist"].append(Sprite (flake,(randint(1,WIDTH),0)))
+    if data["frames"]%300 == 0:
+        for i in range (FLAKES/10):
+            data["flakelist"].append(Sprite (flake,(randint(1,WIDTH),0)))
             
         
     
@@ -30,6 +30,7 @@ if __name__ == "__main__":             #putting flakes on screen
     
     data = {}
     data["flakelist"] = []                #list of flakes
+    data["frames"] = 0
     
     white = Color(0xFFFFFF,1)
     black = Color(0x000000,0.5)
