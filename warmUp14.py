@@ -4,6 +4,6 @@
 
 
 
-names = input ("What is your full name? ").split(" ")
+names = input ("Enter your first and last name: ").split(" ")
 
-print ("Your initials are", names[0][0], names[1][0], names[2][0], names[3][0], names[4][0], names[5][0])
+print ("Your initials are", names[0][0],".", names[1][0],".")
