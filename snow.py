@@ -13,8 +13,10 @@ HEIGHT= 500
 
 def step():                             #move each flake randomly in x and y
     for flake in data["flakelist"]:
-        flake.x += randint (-2,2)
+        flake.x += randint (-3,2)
         flake.y += randint (0,3)
+        for i in range (FLAKES/15):
+            data["flakelist"].append(Sprite (flake,(randint(1,WIDTH),0)))
 
 if __name__ == "__main__":             #putting flakes on screen
     
@@ -23,7 +25,7 @@ if __name__ == "__main__":             #putting flakes on screen
     data["flakelist"] = []                #list of flakes
     
     white = Color(0xFFFFFF,1)
-    black = color(0x000000,0.5)
+    black = Color(0x000000,0.5)
     background = RectangleAsset(1000,500,LineStyle(1,black),black)
     flake = CircleAsset(5,LineStyle(1,white),white)
     
