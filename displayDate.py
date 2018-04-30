@@ -11,6 +11,7 @@ day = date.today().day
 month = date.today().month
 year = date.today().year
 
+weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+
 print (weekdays[weekday(year,month,day)])
 
-weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
