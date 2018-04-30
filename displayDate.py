@@ -11,5 +11,4 @@ day = date.today().day
 month = date.today().month
 year = date.today().year
 
-
-print (weekday[w])
+print (weekday(year,month,day))
