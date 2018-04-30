@@ -25,6 +25,6 @@ if __name__ == "__main__":
     ant = CircleAsset(5,LineStyle(1,red),red)
     
     for i in range (ANTS):
-        data["antList"].append(Sprite (ant,(randint(1,WIDTH),randint(1,HEIGHT))))
+        data["antlist"].append(Sprite (ant,(randint(1,WIDTH),randint(1,HEIGHT))))
     
     App().run(step)
