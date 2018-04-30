@@ -22,7 +22,9 @@ if __name__ == "__main__":             #putting flakes on screen
     data = {}
     data["flakelist"] = []                #list of flakes
     
-    white = Color(0x000000,1)
+    white = Color(0xFFFFFF,1)
+    black = color(0x000000,0.5)
+    background = RectangleAsset(1000,500,LineStyle(1,black),black)
     flake = CircleAsset(5,LineStyle(1,white),white)
     
     for i in range (FLAKES):
