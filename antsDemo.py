@@ -12,8 +12,8 @@ HEIGHT= 500
 
 def step():
     for ant in data["antlist"]:
-        ant.x +=1
-        ant.y +=1
+        ant.x += randint (-4,4)
+        ant.y += randint (-4,4)
 
 if __name__ == "__main__":
     
