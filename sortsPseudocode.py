@@ -5,22 +5,19 @@
 from random import randint
 from time import time
 
-N = 100 #how many numbers will be sorted
+N = 10 #how many numbers will be sorted
 
-def mySort(A):
-    swapped = True
-    while swapped:
-        swapped = False
-        for i in range (0,len(A)-1):
-            if A[i]>A[i+1]:
-                A[i],A[i+1] = A[i+1],A[i] #python swappin'
-                swapped = True
-        if not swapped:
-            break
-        for i in range (len(A)-2,-1,-1):
-            if A[i]>A[i+1]:
-                A[i],A[i+1] = A[i+1],A[i] #python swappin'
-                swapped = True
+def quickSort(A[low:high]):
+    if low<high:
+        p = partion (A, low, high)
+        quickSort(A, low, p - 1 )
+        quickSort(A, p + 1, high)
+
+def partition:
+    pivot = A[high]
+    i = low-1
+    
+    
     
     return A
     
