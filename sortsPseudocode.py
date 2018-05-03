@@ -7,14 +7,14 @@ from time import time
 
 N = 10 #how many numbers will be sorted
 
-def quickSort(A[low:high]):
-    if low<high:
-        p = partion (A, low, high)
-        quickSort(A, low, p - 1 )
-        quickSort(A, p + 1, high)
+def quickSort(A, 0, N-1):
+    if 0 < N-1:
+        p = partion (A, 0, N-1)
+        quickSort(A, 0, p-1 )
+        quickSort(A, p+1, N-1)
 
 def partition:
-    pivot = A[high]
+    pivot = A[N-1]
     i = low-1
     
     
