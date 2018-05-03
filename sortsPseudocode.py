@@ -13,10 +13,15 @@ def quickSort(A, 0, N-1):
         quickSort(A, 0, p-1 )
         quickSort(A, p+1, N-1)
 
-def partition:
+def partition(A, 0, N-1):
     pivot = A[N-1]
     i = low-1
-    
+    for j==0 or j == N-2:
+        if A[j]<pivot:
+            i +=1
+            A[i],A[j] = A[j],A[i]
+    A[i+1], A[N-1] = A[N-1], A[i+1]
+    return [i+1]
     
     
     return A
