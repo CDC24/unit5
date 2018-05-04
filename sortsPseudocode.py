@@ -12,6 +12,7 @@ def quickSort(A, low, high):
         p = partition (A, low, high)
         quickSort(A, low, p-1 )
         quickSort(A, p+1, high)
+    return A
 
 def partition(A, low, high):
     pivot = A[high]
@@ -23,15 +24,12 @@ def partition(A, low, high):
     A[i+1], A[high] = A[high], A[i+1]
     return i+1
     
-    
-    return A
-    
 if __name__ == '__main__':
 
      #make a list of N random numbers between 1 and N
     A = [0]*N
-    for i in range(N):
-        A[i] = randint(1,N)
+    for q in range(N):
+        A[q] = randint(1,N)
     
     pythonSort = sorted(A) #Python's sort
     
