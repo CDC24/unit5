@@ -9,7 +9,7 @@ N = 10 #how many numbers will be sorted
 
 def quickSort(A, N):
     if 0 < N-1:
-        p = partion (A, 0, N-1)
+        p = partion (A, N)
         quickSort(A, 0, p-1 )
         quickSort(A, p+1, N-1)
 
@@ -28,8 +28,8 @@ def partition(A, N):
     
 if __name__ == '__main__':
 
-    #make a list of N random numbers between 1 and N
-    numbers = [0]*N
+     #make a list of N random numbers between 1 and N
+    A = [0]*N
     for i in range(N):
         numbers[i] = randint(1,N)
     
