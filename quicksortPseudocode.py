@@ -1,26 +1,26 @@
 #Caleb Callaway
 #5/2/18
-#sortsPseudocode.py - using Wikipedia pseudocode
+#quicksortPseudocode.py - using Wikipedia pseudocode for quicksort
 
 from random import randint
 from time import time
 
-N = 10 #how many numbers will be sorted
+N = 100 #how many numbers will be sorted
 
 def quickSort(A, low, high):
     if low < high:
         p = partition (A, low, high)
-        quickSort(A, low, p-1 )
+        quickSort(A, low, p-1 )         #repeating on either side of partition
         quickSort(A, p+1, high)
     return A
 
 def partition(A, low, high):
     pivot = A[high]
     i = low-1
-    for j in range (low, high):
+    for j in range (low, high):        #splitting
         if A[j]<pivot:
             i +=1
-            A[i],A[j] = A[j],A[i]
+            A[i],A[j] = A[j],A[i]       #rearranging
     A[i+1], A[high] = A[high], A[i+1]
     return i+1
     
