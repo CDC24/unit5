@@ -16,7 +16,7 @@ def quickSort(A, N):
 def partition(A, N):
     pivot = A[N-1]
     i = low-1
-    for j==0 or j == N-2:
+    for j in range (0, N-2):
         if A[j]<pivot:
             i +=1
             A[i],A[j] = A[j],A[i]
