@@ -20,7 +20,7 @@ def partition(A, low, high):
         if A[j]<pivot:
             i +=1
             A[i],A[j] = A[j],A[i]
-    A[i+1], A[N-1] = A[N-1], A[i+1]
+    A[i+1], A[high] = A[high], A[i+1]
     return i+1
     
     
