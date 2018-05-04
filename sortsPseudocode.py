@@ -37,7 +37,7 @@ if __name__ == '__main__':
     
     #time how long your sort takes
     t1 = time()
-    numbers = mySort(numbers)
+    numbers = quickSort(A, N)
     #numbers = numbers.sort()       #tested the python sort
     t2 = time()
     
