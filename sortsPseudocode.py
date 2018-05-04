@@ -7,21 +7,21 @@ from time import time
 
 N = 10 #how many numbers will be sorted
 
-def quickSort(A, N):
-    if 0 < N-1:
-        p = partition (A, N)
-        quickSort(A, 0, p-1 )
-        quickSort(A, p+1, N-1)
+def quickSort(A, low, high):
+    if low < high:
+        p = partition (A, low, high)
+        quickSort(A, low, p-1 )
+        quickSort(A, p+1, high)
 
-def partition(A, N):
-    pivot = A[N-1]
-    i = low-1
-    for j in range (0, N-2):
+def partition(A, low, high):
+    pivot = A[high]
+    i = 0-1
+    for j in range (low, high-1):
         if A[j]<pivot:
             i +=1
             A[i],A[j] = A[j],A[i]
     A[i+1], A[N-1] = A[N-1], A[i+1]
-    return [i+1]
+    return i+1
     
     
     return A
@@ -37,7 +37,7 @@ if __name__ == '__main__':
     
     #time how long your sort takes
     t1 = time()
-    A = quickSort(A, N)
+    A = quickSort(A, 0, N-1)
     #numbers = numbers.sort()       #tested the python sort
     t2 = time()
     
