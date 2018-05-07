@@ -21,9 +21,10 @@ def smallest(list):
     
 def decimalRange(a,b,c):
     R = [a]
-     length = (b-a)/c
-    for i in range (0,length):
+    while True:
         R.append(R[i-1]+c)
+        if len(R)>=b:
+            break
     
     
     
