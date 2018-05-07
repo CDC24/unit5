@@ -21,10 +21,13 @@ def smallest(list):
     
 def decimalRange(a,b,c):
     R = [a]
+    i=1
     while True:
         R.append(R[i-1]+c)
-        if len(R)>=b:
+        i+=1
+        if (R[i-1]+c)==b:
             break
+    return (R)
     
     
     
